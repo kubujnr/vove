@@ -33,7 +33,7 @@ export default function index() {
   };
 
   const handleDownload = (format) => {
-    const downloadUrl = `/api/download-video?url=${info.videoDetails.video_url}&itag=${format.itag}&title=${info.videoDetails.title}`;
+    const downloadUrl = `/api/download-video?url=${info.videoDetails.video_url}&itag=${format.itag}`;
     window.location.href = downloadUrl;
   };
 
