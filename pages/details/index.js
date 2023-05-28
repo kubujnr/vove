@@ -45,7 +45,7 @@ export default function index() {
 
   return (
     <div>
-      <main className="h-[70vh] relative w-full text-white bg-[url(/public/home-hero-gradient-yt.svg)] bg-center bg-no-repeat bg-cover">
+      <main className="h-[70vh] relative w-full text-white bg-[url(/home-hero-gradient-yt.svg)] bg-center bg-no-repeat bg-cover">
         <div className="mx-auto md:w-3/5 md:p-0 px-4 space-y-12">
           <div className="pt-36 space-y-4">
             <h1 className="font-bold text-2xl md:text-3xl">
