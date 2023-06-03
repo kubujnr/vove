@@ -15,7 +15,7 @@ export default function index() {
     const videoUrl = "https://www.youtube.com/watch?v=" + videoId;
 
     try {
-      const res = await fetch("/api/video?url=" + videoUrl);
+      const res = await fetch("https://youtube-api-thf1.onrender.com/video?url=" + videoUrl);
       const videoInfo = await res.json();
 
       setInfo({
@@ -33,7 +33,7 @@ export default function index() {
   };
 
   const handleDownload = (format) => {
-    const downloadUrl = `/api/download-video?url=${info.videoDetails.video_url}&itag=${format.itag}`;
+    const downloadUrl = `https://youtube-api-thf1.onrender.com/download-video?url=${info.videoDetails.video_url}&itag=${format.itag}`;
     window.location.href = downloadUrl;
   };
 
